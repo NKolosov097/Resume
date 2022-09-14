@@ -1,0 +1,77 @@
+@import '../../../../styles/variables.scss';
+
+ul {
+    list-style: square;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: $section-background;
+    height: 100vh;
+    width: 100%;
+    color: $black;
+
+    border-bottom: 2px $body-background solid;
+    border-radius: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    padding: 35px;
+
+    text-transform: uppercase;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.info {
+    width: 350px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.img__wrapper {
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+
+    border-radius: $border-radius-img;
+}
+
+.info__list {
+    text-align: left;
+}
+
+.info__item {
+    padding: 5px 0;
+}
+
+.info__content {
+    line-height: $deafault-line-height;
+    font-size: $deafault-font-size;
+}
+
+
+
+

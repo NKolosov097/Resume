@@ -1,0 +1,92 @@
+@import '../../../../styles/variables.scss';
+
+.section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: $section-background;
+    height: 50vh;
+    width: 100%;
+    color: $black;
+
+    border-bottom: 2px $body-background solid;
+    border-radius: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    padding: 35px;
+
+    text-transform: uppercase;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+
+    width: 100%;
+}
+
+.info {
+    width: 350px;
+    margin: 0 20px;
+}
+
+.content {
+    display: inline-block;
+    text-align: left;
+    line-height: $deafault-line-height;
+    font-size: $deafault-font-size;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    display: flex;
+}
+
+.footer__item {
+    background: $body-background;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    fill: white;
+    transition: 0.3s;
+}
+
+.footer__item:hover {
+    background: $blue-background;
+    fill: white;
+}
+
+.footer__item:active {
+    background: $light-blue;
+    fill: white;
+}
+
+.footer__item:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+
+    text-align: center;
+    color: $body-background;
+    font-size: 15px;
+}

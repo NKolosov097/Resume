@@ -1,0 +1,28 @@
+@import '~normalize.css';
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Mono&family=PT+Sans&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
+    
+    background: $body-background;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

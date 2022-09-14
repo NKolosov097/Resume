@@ -1,0 +1,96 @@
+@import '../../../../styles/variables.scss';
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: $header-background;
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+
+    border-bottom: 2px $body-background solid;
+    border-radius: 10px;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.img__wrapper {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.img {
+    margin-bottom: 50px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 10px;
+    text-align: center;
+
+    .fullname {
+        font-size: 40px;
+        line-height: 44px;
+        color: $black;
+        overflow: hidden;
+        border-right: .07em solid $blue-background;
+        white-space: nowrap;
+        margin: 0 auto 6px;
+        letter-spacing: .07em;
+        animation: 
+            typing 4.5s steps(30, end),
+            blink-caret .7s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: $blue-background }
+    }
+
+    .post,
+    .city {
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+        opacity: 0.7;
+    }
+
+    .city {
+        margin-bottom: 20px;
+    }
+
+    .toContact {
+        font-size: 18px;
+        line-height: 24px;
+        color: $white;
+        background: $blue-background;
+        padding: 10px 90px;
+        border: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .toContact:hover {
+        background: $body-background;
+    }
+
+    .toContact:active {
+        background: $light-blue;
+    }
+}
+
+
