@@ -1,0 +1,33 @@
+@import "overlayscrollbars/overlayscrollbars.css";
+
+@font-face {
+  font-family: resume-poppins-light;
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: resume-poppins-medium;
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: resume-poppins-regular;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: resume-poppins-regular, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dark-text: #161616;
+  --light-text: #ffffff;
+}
+
+code {
+  font-family: resume-poppins-regular, source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}

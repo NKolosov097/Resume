@@ -1,0 +1,98 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: calc(100vh - 80px);
+}
+
+.headers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  letter-spacing: 2px;
+}
+
+.h1,
+.h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+
+  font-family: resume-poppins-medium, sans-serif;
+  font-size: 55px;
+  -webkit-text-shadow: 3px 3px 7px rgba(235, 235, 235, 0.55);
+  text-shadow: 3px 3px 7px rgba(235, 235, 235, 0.55);
+}
+
+.h2 {
+  font-family: resume-poppins-light, sans-serif;
+  font-size: 30px;
+}
+
+.imgWrapper,
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  min-height: 50%;
+  height: 650px;
+  border-radius: 25px;
+  /* background-color: #fff; */
+}
+
+.img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 415px;
+  min-height: 50%;
+
+  background-image: url("../../img/avatar-1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: cover;
+  color: var(--dark-text);
+
+  -webkit-box-shadow: 5px 5px 25px 0px rgba(230, 230, 230, 0.1);
+  -moz-box-shadow: 5px 5px 25px 0px rgba(230, 230, 230, 0.1);
+  box-shadow: 5px 5px 25px 0px rgba(230, 230, 230, 0.1);
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-wrap: wrap;
+  }
+
+  .imgWrapper,
+  .headers {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .headers {
+    order: 1;
+    text-align: center;
+  }
+
+  .imgWrapper {
+    order: 0;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .h1 {
+    font-size: 35px;
+  }
+
+  .h2 {
+    font-size: 19px;
+  }
+}

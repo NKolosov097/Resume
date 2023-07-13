@@ -1,0 +1,6 @@
+.wrapper {
+  position: relative;
+  max-width: 1440px;
+  height: 200vh;
+  margin: 0 auto;
+}
