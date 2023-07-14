@@ -9,10 +9,10 @@ interface ITechnologyProps {
 export const Technology = ({ icon, description }: ITechnologyProps) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.8 }}
       className={styles.technology}
       title={description}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.8 }}
     >
       {icon}
     </motion.div>

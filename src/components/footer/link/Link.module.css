@@ -1,0 +1,17 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* margin: 20px 40px; */
+  margin: 0 15px;
+
+  background-color: #383838;
+  fill: #ebebeb;
+  color: #ebebeb;
+}
