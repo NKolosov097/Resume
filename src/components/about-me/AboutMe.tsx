@@ -35,7 +35,7 @@ export const AboutMe = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section id="aboutMe" className={styles.section}>
       <motion.div
         style={{ overflow: "hidden" }}
         variants={container}

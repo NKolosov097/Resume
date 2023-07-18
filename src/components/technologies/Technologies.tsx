@@ -168,9 +168,6 @@ const technologies1 = [
     ),
     description: "WebSocket",
   },
-];
-
-const technologies2 = [
   {
     icon: <FaNode size={70} />,
     description: "NodeJS",
@@ -183,7 +180,6 @@ const technologies2 = [
     icon: <SiStyledcomponents size={70} />,
     description: "styled-components",
   },
-
   {
     icon: <SiTailwindcss size={70} />,
     description: "Tailwind",
@@ -217,31 +213,48 @@ const technologies2 = [
 ];
 
 export const Technologies = () => {
-  return (
-    <section className={styles.section}>
-      <div className={styles.block}>
-        {technologies1.map((technology) => {
-          return (
-            <Technology
-              key={technology.description}
-              icon={technology.icon}
-              description={technology.description}
-            />
-          );
-        })}
-      </div>
+  const width = window.innerWidth;
 
-      <div className={styles.block}>
-        {technologies2.map((technology) => {
-          return (
-            <Technology
-              key={technology.description}
-              icon={technology.icon}
-              description={technology.description}
-            />
-          );
-        })}
-      </div>
+  return (
+    <section id="technologies" className={styles.section}>
+      {width <= 1100 ? (
+        <div className={styles.block}>
+          {technologies1.map((technology) => {
+            return (
+              <Technology
+                key={technology.description}
+                icon={technology.icon}
+                description={technology.description}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <>
+          <div className={styles.block}>
+            {technologies1.slice(0, 9).map((technology) => {
+              return (
+                <Technology
+                  key={technology.description}
+                  icon={technology.icon}
+                  description={technology.description}
+                />
+              );
+            })}
+          </div>
+          <div className={styles.block}>
+            {technologies1.slice(9).map((technology) => {
+              return (
+                <Technology
+                  key={technology.description}
+                  icon={technology.icon}
+                  description={technology.description}
+                />
+              );
+            })}
+          </div>
+        </>
+      )}
     </section>
   );
 };

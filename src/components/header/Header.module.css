@@ -1,5 +1,6 @@
 .header {
   position: sticky;
+  z-index: 100;
   top: 0;
   box-sizing: border-box;
 
@@ -17,4 +18,23 @@
   color: #161616;
   font-size: 25px;
   background-color: #ebebeb;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.navItem {
+  display: flex;
+  margin: 0 20px;
+
+  color: #161616;
+  font-family: resume-poppins-regular, sans-serif;
 }

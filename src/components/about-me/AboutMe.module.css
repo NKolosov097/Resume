@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 
 .headers {
@@ -22,7 +22,6 @@
 
   font-family: resume-poppins-medium, sans-serif;
   font-size: 55px;
-  -webkit-text-shadow: 3px 3px 7px rgba(235, 235, 235, 0.55);
   text-shadow: 3px 3px 7px rgba(235, 235, 235, 0.55);
 }
 
@@ -41,7 +40,6 @@
   min-height: 50%;
   height: 650px;
   border-radius: 25px;
-  /* background-color: #fff; */
 }
 
 .img {
@@ -74,9 +72,14 @@
     flex-wrap: wrap;
   }
 
+  .imgWrapper {
+    margin: 0 !important;
+  }
+
   .headers {
     order: 1;
     text-align: center;
+    margin-top: -200px;
   }
 
   .imgWrapper {

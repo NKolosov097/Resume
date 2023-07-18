@@ -15,10 +15,24 @@
   src: url("../assets/fonts/Poppins-Regular.ttf");
 }
 
+ul,
+li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   max-width: 1440px;
-  height: 200vh;
   margin: 0 auto;
 
   font-family: resume-poppins-regular, -apple-system, BlinkMacSystemFont,
@@ -47,6 +61,36 @@ body::-webkit-scrollbar-thumb {
   background-color: #ebebeb; /* цвет плашки */
   border-radius: 20px; /* закругления плашки */
   border: 3px solid transparent; /* padding вокруг плашки */
+}
+
+header > nav > ul > li > a::selection {
+  color: #ebebeb;
+  background-color: #161616;
+}
+
+div > h1 > span::selection {
+  color: #161616;
+  background-color: #ebebeb;
+}
+
+div > h2 > span::selection {
+  color: #161616;
+  background-color: #ebebeb;
+}
+
+header > nav > ul > li > a::-moz-selection {
+  color: #ebebeb;
+  background-color: #161616;
+}
+
+div > h1 > span::-moz-selection {
+  color: #161616;
+  background-color: #ebebeb;
+}
+
+div > h2 > span::-moz-selection {
+  color: #161616;
+  background-color: #ebebeb;
 }
 
 code {

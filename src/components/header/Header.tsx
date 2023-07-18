@@ -9,13 +9,25 @@ export const Header = () => {
       transition={{ delay: 0.2, duration: 0.6 }}
       className={styles.header}
     >
-      <motion.span
+      <motion.nav
+        className={styles.list}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 1 }}
       >
-        resume
-      </motion.span>
+        <ul className={styles.list}>
+          <li>
+            <a href="#aboutMe" className={styles.navItem}>
+              about me
+            </a>
+          </li>
+          <li>
+            <a href="#technologies" className={styles.navItem}>
+              skills
+            </a>
+          </li>
+        </ul>
+      </motion.nav>
     </motion.header>
   );
 };

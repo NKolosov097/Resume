@@ -51,6 +51,7 @@ export const Footer = () => {
       <div className={styles.links}>
         {links.map((link) => (
           <Link
+            key={link.description}
             href={link.href}
             icon={link.icon}
             description={link.description}
